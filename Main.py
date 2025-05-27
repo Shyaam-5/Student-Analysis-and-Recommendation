@@ -71,10 +71,13 @@ def generate_todo_list_all_courses(courses, syllabus_dict):
             syllabus_text = syllabus_dict[course].strip()
 
             prompt = f"""
-            Course Name: {course}
-            Below is the syllabus for this course:
-
+           You are an expert academic advisor. Here is a course: {course}
+            
+            Syllabus:
+            \"\"\"
             {syllabus_text}
+            \"\"\"
+
 
             Based on the syllabus, generate a To-Do list to help students prepare for the course. 
             Limit the list to a maximum of 3 topics for each level:
