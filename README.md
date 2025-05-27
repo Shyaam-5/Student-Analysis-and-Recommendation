@@ -10,9 +10,10 @@ deployed link: https://wiproml.streamlit.app/
 The application consists of seven main phases:
 
 ### 1. Data Loading (Anar1)
-- Upload and process student performance data from CSV or Excel files
+- Upload and process student performance data from CSV or Excel files(final.csv)
 - Standardizes column names and data formats 
 - Displays processed data in an interactive table
+  
 
 ### 2. Strength/Weakness Analysis (Anar2)
 - Analyzes performance trends across multiple attempts
