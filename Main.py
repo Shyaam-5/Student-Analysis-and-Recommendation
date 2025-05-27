@@ -68,7 +68,7 @@ def generate_todo_list_all_courses(courses, syllabus_dict):
 
     for course in courses:
         if course in syllabus_dict:
-            syllabus_text = json.dumps(syllabus_dict[course])
+            syllabus_text = syllabus_dict[course].strip()
 
             prompt = f"""
             Course Name: {course}
