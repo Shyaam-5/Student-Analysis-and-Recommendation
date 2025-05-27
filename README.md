@@ -131,6 +131,26 @@ streamlit run app.py
 - The system requires a Google API key for generating course recommendations
 - Future student performance data should be saved as "updated_student_marks.csv" for the improvement tracking phase
 - The syllabus dictionary needs to be defined with course content for recommendation generation
+- 📂 Included Synthetic Datasets
+This project includes two synthetic datasets that simulate real-world student performance scenarios while maintaining data privacy:
+
+final.csv
+Purpose: Serves as the primary dataset for phases such as performance analysis, peer pairing, dashboard visualization, and personalized reporting.
+
+Description: Carefully crafted to reflect real-life academic behavior, this dataset mimics student records including marks, grades, performance categories, and course details.
+
+Usage: Used in Phase 1 (Anar1) for initial data ingestion and across phases like Anar2 to Anar7 for analysis and reporting.
+
+updated_student_marks.csv
+Purpose: Used to evaluate student improvements over time.
+
+Description: A continuation dataset derived synthetically based on expected academic progression. It provides a realistic baseline for the Improvement Tracking phase.
+
+Usage: Specifically required in Phase 5 (Anar5) to assess and predict improvements using machine learning models.
+
+These datasets were synthetically generated but structured to reflect genuine educational scenarios, enabling comprehensive testing and demonstration of the system’s capabilities without compromising student privacy.
+
+
 
 ## Troubleshooting
 - If you encounter issues with data processing, ensure your CSV file follows the expected format
