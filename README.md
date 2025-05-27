@@ -13,6 +13,9 @@ The application consists of seven main phases:
 - Upload and process student performance data from CSV or Excel files(final.csv)
 - Standardizes column names and data formats 
 - Displays processed data in an interactive table
+- final.csv
+       Serves as the primary dataset for phases such as performance analysis, peer pairing, dashboard visualization, and personalized reporting. Carefully crafted to reflect real-life academic behavior, this dataset mimics student records including marks, grades, performance categories, and course details.
+
   
 
 ### 2. Strength/Weakness Analysis (Anar2)
@@ -38,6 +41,10 @@ The application consists of seven main phases:
 - Analyzes historical data to identify improvement patterns
 - Provides overall and subject-wise improvement statistics
 - Lists students showing improvement in each subject
+- Purpose: Used to evaluate student improvements over time.
+  updated_student_marks.csv:
+     A continuation dataset derived synthetically based on expected academic progression. It provides a realistic baseline for the Improvement Tracking phase.
+  the dataset is har
 
 ### 6. Dashboard (Visualization)
 - Provides visual representations of performance data
@@ -132,23 +139,11 @@ streamlit run app.py
 - Future student performance data should be saved as "updated_student_marks.csv" for the improvement tracking phase
 - The syllabus dictionary needs to be defined with course content for recommendation generation
 - 📂 Included Synthetic Datasets
-This project includes two synthetic datasets that simulate real-world student performance scenarios while maintaining data privacy:
-
-final.csv
-Purpose: Serves as the primary dataset for phases such as performance analysis, peer pairing, dashboard visualization, and personalized reporting.
-
-Description: Carefully crafted to reflect real-life academic behavior, this dataset mimics student records including marks, grades, performance categories, and course details.
-
-Usage: Used in Phase 1 (Anar1) for initial data ingestion and across phases like Anar2 to Anar7 for analysis and reporting.
-
-updated_student_marks.csv
-Purpose: Used to evaluate student improvements over time.
-
-Description: A continuation dataset derived synthetically based on expected academic progression. It provides a realistic baseline for the Improvement Tracking phase.
-
-Usage: Specifically required in Phase 5 (Anar5) to assess and predict improvements using machine learning models.
-
-These datasets were synthetically generated but structured to reflect genuine educational scenarios, enabling comprehensive testing and demonstration of the system’s capabilities without compromising student privacy.
+        This project includes two synthetic datasets that simulate real-world student performance scenarios while maintaining data privacy:
+            1.final.csv
+            2.updated_student_marks.csv
+  These datasets were synthetically generated but structured to reflect genuine educational scenarios, enabling comprehensive testing and demonstration of the       
+  system’s capabilities without compromising student privacy.
 
 
 
