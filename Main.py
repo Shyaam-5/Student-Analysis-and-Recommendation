@@ -64,7 +64,7 @@ def load_and_process_data(uploaded_file):
 # Function to generate To-Do lists for all courses
 def generate_todo_list_all_courses(courses, syllabus_dict):
     combined_todo_list = {}
-    model = genai.GenerativeModel(model_name="gemini-2.5-flash-exp")
+    model = genai.GenerativeModel(model_name="gemini-2.0-flash-exp")
 
     for course in courses:
         if course in syllabus_dict:
